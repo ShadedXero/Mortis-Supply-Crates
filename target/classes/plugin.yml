@@ -1,0 +1,9 @@
+name: MortisSupplyCrates
+version: '1.0'
+main: me.none030.mortissupplycrates.MortisSupplyCrates
+api-version: 1.13
+depend: [DecentHolograms]
+softdepend: [Towny]
+commands:
+  crates:
+    permission: "crates.commands"
