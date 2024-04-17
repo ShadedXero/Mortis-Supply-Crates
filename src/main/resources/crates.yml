@@ -1,0 +1,79 @@
+crates:
+  EXAMPLE_CRATE:
+    rolls: 1 #The number of rewards it will give player upon opening this crate
+    re-roll: false #Wheather a loot can have multiple of the same items
+    crate-item: #The virtual crate item
+      material: CHEST
+      amount: 1
+      name: "&eExample Crate"
+      lore:
+        - "&7Right-Click to open the crate"
+        - "&7Left-Click to view the crate"
+    rewards: #Rewards in the crate
+      EXAMPLE_CATEGORY:
+        chance: 100
+        rewards:
+          - EXAMPLE_SWORD:50
+          - TEST_ITEM:50
+          - EXAMPLE_COMMAND:10
+    commands-on-open: #Commands to run upon opening this crate
+      - "give %player_name% cooked_mutton 10"
+  BEST_CRATE:
+    rolls: 3
+    re-roll: false
+    crate-item:
+      material: CHEST
+      amount: 1
+      name: "&eAwesome Crate"
+      lore:
+        - "&7Right-Click to open the crate"
+        - "&7Left-Click to view the crate"
+    rewards:
+      EXAMPLE_CATEGORY:
+        chance: 100
+        rewards:
+          - EXAMPLE_SWORD:50
+          - APPLES:30
+          - DIAMOND:10
+          - TEST:30
+          - TEST_ITEM:50
+          - EXAMPLE_COMMAND:10
+    commands-on-open:
+      - "give %player_name% cooked_mutton 10"
+rewards:
+  EXAMPLE_SWORD:
+    type: ITEM # ITEM | COMMAND
+    material: DIAMOND_SWORD
+    amount: 1
+    name: "&fDiamond Sword"
+    lore:
+      - "&7Greatest Sword"
+    enchants:
+      - PROTECTION_ENVIRONMENTAL:4
+    flags:
+      - HIDE_ENCHANTS
+  TEST_ITEM:
+    type: ITEM # ITEM | COMMAND
+    material: DIAMOND
+    amount: 1
+    name: "&cSpecial Diamond"
+  EXAMPLE_COMMAND:
+    type: COMMAND # ITEM | COMMAND
+    command: "give %player_name% cooked_beef 10" #Use %player_name% for the player
+    material: COOKED_BEEF
+    amount: 10
+  APPLES:
+    type: ITEM # ITEM | COMMAND
+    material: GOLDEN_APPLE
+    amount: 3
+    name: "&fGolden Apple"
+  DIAMOND:
+    type: ITEM # ITEM | COMMAND
+    material: DIAMOND
+    amount: 1
+    name: "Diamond"
+  TEST:
+    type: ITEM # ITEM | COMMAND
+    material: DIAMOND_AXE
+    amount: 1
+    name: "Diamond Axe"

@@ -1,0 +1,26 @@
+supply-crates:
+  EXAMPLE_SUPPLY_CRATE:
+    spawn-message: "&eA supply crate spawned at %world% %x% %y% %z%" #Message that is going to be broadcast when this supply crate spawns
+    hologram: #This is going to be displayed above the supply crate
+      - "&bSupply Crate"
+      - "&7Click to loot"
+    world: world #The name of the world where this supply crate is going to spawn
+    location1: "10, -101" #Range of location where the supply crate is going to spawn
+    location2: "-519, 31"
+    interval: 10m #The interval for spawning #Use m for minutes, s for seconds and h for hours
+    despawn: 30m #The delay for the despawning of the supply crate
+    crates: #Crates From crates.yml
+      - EXAMPLE_CRATE
+      - BEST_CRATE
+  AWESOME_CRATE:
+    spawn-message: "&eA awesome crate spawned at %world% %x% %y% %z%" #Message that is going to be broadcast when this supply crate spawns
+    hologram:
+      - "&bAwesome Crate"
+      - "&7Click to loot"
+    world: world
+    location1: "103, -1301"
+    location2: "-5119, 331"
+    interval: 10m
+    despawn: 30m
+    crates:
+      - BEST_CRATE

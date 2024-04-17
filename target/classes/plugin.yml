@@ -1,0 +1,11 @@
+name: MortisSupplyCrates
+version: '2.8'
+main: com.mortisdevelopment.mortissupplycrates.MortisSupplyCrates
+api-version: '1.18'
+depend:
+  - DecentHolograms
+softdepend:
+  - Towny
+commands:
+  crates:
+    aliases: [mortiscrates, mortissupplycrates, supplycrates]

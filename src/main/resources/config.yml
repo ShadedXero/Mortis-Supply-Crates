@@ -1,0 +1,18 @@
+database:
+  file: data\database
+  username: user
+  password: pass
+
+messages:
+  no-permission: "&cYou don't have permission to use this"
+  spawn-usage: "&cUsage: /supplycrate spawn <supply-crate-id>"
+  invalid-supply-crate: "&cPlease enter a valid supply crate id"
+  spawned: "&aSpawned the supply crate"
+  give-usage: "&cUsage: /supplycrate give <player-name> <crate-id>"
+  invalid-target: "&cPlease enter a valid target"
+  invalid-crate: "&cPlease enter a valid crate id"
+  crate-given: "&cGave the crate to the target"
+  despawn-usage: "&cUsage: /supplycrate despawn <world> <x> <y> <z>"
+  invalid-number: "&cPlease enter a valid number"
+  despawned: "&cThe supply crate has been despawned"
+  reload: "&cReloaded"
